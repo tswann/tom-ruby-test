@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'datamapper'
 
-DataMapper.setup(:default, '')
+DataMapper.setup(:default, (ENV["DATABASE_URL"] || "sqlite3:///#{Dir.pwd}/development.sqlite3"))
 
 class Note
   include DataMapper::Resource
