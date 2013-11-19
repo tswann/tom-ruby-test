@@ -5,5 +5,5 @@ get '/' do
 end
 
 get '/about' do
-  "A little bit about me. I am a third Tam."
+  "A little bit about me. I am the third of the Tams."
 end
