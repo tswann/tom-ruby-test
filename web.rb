@@ -4,8 +4,8 @@ get '/' do
   "Hello, world"
 end
 
-get '/hello/:name' do
-  "Hello there, #{params[:name]}."
+get '/hello/:name/:city' do
+  "Hello there, #{params[:name]} from #{params[:city]}."
 end
 
 get '/about' do
