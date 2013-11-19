@@ -19,4 +19,5 @@ PLATFORMS
 DEPENDENCIES
   sinatra (= 1.1.0)
   thin
+  dm-postgres-adapter
   data_mapper
